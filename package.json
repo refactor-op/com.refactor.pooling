@@ -9,12 +9,10 @@
     "type": "git", 
     "url": "https://github.com/refactor-op/cn.refactor.pooling.git"
   },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
-  },
   "files": [
     "package.json",
     "Runtime/",
+    "Tests/",
     "README.md"
   ]
 }
