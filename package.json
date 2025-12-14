@@ -1,5 +1,5 @@
 {
-  "name": "cn.refactor.pooling",
+  "name": "com.refactor.pooling",
   "displayName": "Refactor Pooling",
   "version": "0.9.11",
   "description": "对象池.",
@@ -7,7 +7,7 @@
   "license": "MIT",
   "repository": {
     "type": "git", 
-    "url": "https://github.com/refactor-op/cn.refactor.pooling.git"
+    "url": "https://github.com/refactor-op/com.refactor.pooling.git"
   },
   "files": [
     "package.json",
