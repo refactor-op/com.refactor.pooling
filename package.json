@@ -1,18 +1,12 @@
 {
   "name": "com.refactor.pooling",
   "displayName": "Refactor Pooling",
-  "version": "0.10.1",
+  "version": "0.10.2",
   "description": "Pooling.",
   "unity": "2021.3",
   "license": "MIT",
   "repository": {
     "type": "git", 
     "url": "https://github.com/refactor-op/com.refactor.pooling.git"
-  },
-  "files": [
-    "package.json",
-    "Runtime/",
-    "Tests/",
-    "README.md"
-  ]
+  }
 }
