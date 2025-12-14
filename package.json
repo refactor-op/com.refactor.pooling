@@ -1,7 +1,7 @@
 {
   "name": "cn.refactor.pooling",
   "displayName": "Refactor Pooling",
-  "version": "0.9.10",
+  "version": "0.9.11",
   "description": "对象池.",
   "unity": "2021.3",
   "license": "MIT",
