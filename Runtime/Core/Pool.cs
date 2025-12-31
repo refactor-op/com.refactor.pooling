@@ -60,8 +60,8 @@ namespace Refactor.Pooling
         public void Return(T obj)
         {
             if (obj == null) return;
-            
-            if (_ptr < _storage.Length && _policy.OnReturn(obj))
+            var accepted = _policy.OnReturn(obj);
+            if (_ptr < _storage.Length && accepted)
             {
                 _storage[_ptr++] = obj;
             }
