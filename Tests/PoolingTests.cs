@@ -11,6 +11,21 @@ namespace Refactor.Pooling.Tests
             public int Value;
             public bool IsReset;
         }
+        
+        [Test]
+        public void Pool_Return_Calls_OnReturn_WhenFull()
+        {
+            var pool = Pools.Create<MyObject, MyObjectPolicy>(new MyObjectPolicy(), 1);
+            var obj1 = pool.Rent();
+            var obj2 = pool.Rent();
+            Assert.IsFalse(obj2.IsReset);
+            pool.Return(obj1);
+            pool.Return(obj2);
+            Assert.IsTrue(obj2.IsReset);
+#if DEVELOPMENT_BUILD
+            Assert.AreEqual(1, pool.RejectedCount);
+#endif
+        }
 
         public struct MyObjectPolicy : IPoolPolicy<MyObject>
         {
